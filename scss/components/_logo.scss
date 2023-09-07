@@ -1,0 +1,53 @@
+.logo {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo__image {
+    width: 50px;
+    height: 44px;
+  }
+}
+
+.logo__image {
+  fill: aquamarine;
+  stroke: rgb(56, 130, 227);
+}
+
+.logo__title {
+  letter-spacing: -0.03em;
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+  }
+}
+
+.logo__subtext {
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+
+.logo__subtext {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}

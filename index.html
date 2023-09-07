@@ -2,13 +2,173 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <title>LandingPage</title>
 </head>
 
 <body>
-  <div class="container">Hello</div>
+  <section class="wrapper">
+    <header class="header container">
+      <div class="header__logo">
+        <a href="./index.html" class=" logo">
+          <svg class="logo__image" height="34" width="34">
+            <use href="./image/sprite-svg.svg#icon-site-logo"></use>
+          </svg>
+          <div class="content">
+            <p class="logo__title">Life</p>
+            <p class="logo__subtext">Create your life</p>
+          </div>
+        </a>
+      </div>
+
+      <nav class="menu header__menu">
+        <ul class="menu__list is-hidden" id="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link link__active">Furniture</a>
+            <!-- <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">One</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Two</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Three</a>
+              </li>
+            </ul> -->
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Shop</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">About Us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="menu__buttons">
+        <button class="basket">
+          <a href="./basket.html" class="basket__link">
+            <svg class="basket__icon" height="32" width="32">
+              <use href="./image/sprite-svg.svg#icon-Bag"></use>
+            </svg>
+            <!-- <span class="basket__count">0</span> -->
+          </a>
+        </button>
+
+
+        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list" data-menu-button>
+          <svg class="menu__icon" height="30" width="30" aria-hidden="true" aria-label="Перемикач мобільного меню">
+            <use class="menu__icon-menu" href="./image/sprite-svg.svg#icon-menu"></use>
+            <use class="menu__icon-cross" href="./image/sprite-svg.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- MOBAIL MENU -->
+
+      <div class="mobail-menu">
+        <ul class="mobail-menu__list" id="menu__list">
+          <li class="mobail-menu__item">
+            <a href="https://www.youtube.com/" class="mobail-menu__link link__active">Furniture</a>
+          </li>
+          <li class="mobail-menu__item">
+            <a href="#" class="menu__link">Shop</a>
+          </li>
+          <li class="mobail-menu__item">
+            <a href="#" class="menu__link">About Us</a>
+          </li>
+          <li class="mobail-menu__item">
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero container">
+      <h1 class="hero__title">
+        Make your interior more minimalistic & modern
+      </h1>
+      <p class="hero__text">
+        Turn your room with panto into a lot more minimalist and modern with
+        ease and speed
+      </p>
+
+      <div class="search">
+        <input class="search__input" type="search" autocomplete="off" spellcheck="true"
+          placeholder="Search furniture" />
+        <svg class="search__icon">
+          <use href="./image/sprite-svg.svg#icon-search1"></use>
+        </svg>
+      </div>
+
+    </section>
+  </section>
+
+  <!-- <section class="choosing container">
+    <h2 class="choosing__title">Why <br> Choosing Us</h2>
+    <ul class="choosing__list">
+      <li class="choosing__item">
+        <h3 class="choosing__subtitle">Luxury facilities</h3>
+        <p class="choosing__text">The advantage of hiring a workspace with us is that givees
+          you comfortable service and all-around facilities.</p>
+        <a href="" class="choosing__link">
+          More Info
+          <svg class="choosing__icon" height="10" width="30">
+            <use href="./image/sprite-svg.svg#icon-arrow-link"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="choosing__item">
+        <h3 class="choosing__subtitle">Affordable Price</h3>
+        <p class="choosing__text">You can get a workspace of the highst quality at an
+          affordable price and still enjoy the facilities that are oly here.</p>
+        <a href="" class="choosing__link">
+          More Info
+          <svg class="choosing__icon" height="10" width="30">
+            <use href="./image/sprite-svg.svg#icon-arrow-link"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="choosing__item">
+        <h3 class="choosing__subtitle">Many Choices</h3>
+        <p class="choosing__text">We provide many unique work space choices so
+          that you can choose the workspace to your liking.</p>
+        <a href="" class="choosing__link">
+          More Info
+          <svg class="choosing__icon" height="10" width="30">
+            <use href="./image/sprite-svg.svg#icon-arrow-link"></use>
+          </svg>
+        </a>
+      </li>
+
+    </ul>
+  </section> -->
+
+  <!-- <button data-modal-open>openModal</button>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quo omnis sequi tempora fugiat saepe aut iste?
+        In consectetur, aperiam dolor ipsum nihil impedit aliquid nisi. Perferendis iste esse dolorum quis asperiores
+        nobis quam incidunt obcaecati, repellendus minus soluta illum voluptate harum eaque sit, qui architecto tempore,
+        natus sapiente numquam?</p>
+      <button data-modal-close>close</button>
+    </div>
+  </div> -->
+  <script src="./js/open-menu.js"></script>
 </body>
 
 </html>
