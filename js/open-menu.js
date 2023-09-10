@@ -10,12 +10,12 @@ btmMenu.addEventListener("click", () => {
     openMenu.style.opacity = "1";
     closeMenu.style.opacity = "0";
     menuContainer.classList.remove("mobail-menu--open");
-    // document.body.classList.remove("modal-open");
+    document.body.classList.remove("modal-open");
   } else {
     openMenu.style.opacity = "0";
     closeMenu.style.opacity = "1";
     menuContainer.classList.add("mobail-menu--open");
-    // document.body.classList.add("modal-open");
+    document.body.classList.add("modal-open");
   }
 });
 
