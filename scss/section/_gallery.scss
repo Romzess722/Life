@@ -1,0 +1,106 @@
+.gallery {
+  background-color: $background-gallary;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &-filters {
+    width: 348px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 66px;
+    border-radius: 44px;
+    background-color: #e6e6e6;
+
+    &__button {
+      padding: 7px 14.5px;
+
+      border: none;
+      background-color: transparent;
+
+      color: $colors-title-choosing;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.85;
+      opacity: 0.8;
+    }
+
+    &__button--active {
+      background-color: $white-color;
+      border-radius: 32px;
+      font-weight: 500;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+}
+
+/******CARD****/
+.products {
+  background-color: $white-color;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 27px;
+
+  &__trump-image {
+    background-color: #978e8e;
+
+    margin-right: auto;
+  }
+
+  &__content {
+    margin-top: 6px;
+  }
+
+  &__category {
+    margin-bottom: 13px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    color: $color-category;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: capitalize;
+    color: $black-color-gallary;
+  }
+}
+
+.products__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__prace {
+  color: $black-color-gallary;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.products__basket {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 49px;
+  height: 49px;
+}

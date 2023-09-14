@@ -1,0 +1,8 @@
+.rating-component {
+  display: flex;
+  margin-bottom: 50px;
+
+  &__item + .rating-component__item {
+    margin-left: 3px;
+  }
+}
