@@ -8,7 +8,7 @@
   }
 
   &-filters {
-    width: 348px;
+    width: 333px;
     margin-left: auto;
     margin-right: auto;
     padding: 6px;
@@ -16,6 +16,10 @@
     margin-bottom: 66px;
     border-radius: 44px;
     background-color: #e6e6e6;
+
+    @media screen and (min-width: 768px) {
+      width: 348px;
+    }
 
     &__button {
       padding: 7px 14.5px;
@@ -43,24 +47,35 @@
 
 /******CARD****/
 .products {
-  background-color: $white-color;
-  border-radius: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 27px;
-
-  &__trump-image {
-    background-color: #978e8e;
-
-    margin-right: auto;
+  &__item {
+    height: 442px;
+    overflow-y: visible;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #f5f4fa;
+    margin-top: 80px;
+  }
+  &__trump {
+    // outline: 1px solid darkmagenta;
+    & > picture {
+      height: 239px;
+      padding-bottom: 33px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
   }
 
   &__content {
-    margin-top: 6px;
+    height: 202.5px;
+    padding: 13px 22px 27px;
+    background-color: $white-color;
+    border-radius: 0 0 20px 20px;
   }
 
   &__category {
-    margin-bottom: 13px;
+    margin-bottom: 6px;
 
     font-size: 16px;
     font-style: normal;
@@ -79,28 +94,39 @@
     text-transform: capitalize;
     color: $black-color-gallary;
   }
-}
 
-.products__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.products__prace {
-  color: $black-color-gallary;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+  &__prace {
+    color: $black-color-gallary;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 3px;
 
-.products__basket {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  width: 49px;
-  height: 49px;
+    & span {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+
+  &__basket {
+    display: flex;
+    padding: 14px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: $black-color-gallary;
+  }
+
+  &__svg {
+    fill: white;
+  }
 }
