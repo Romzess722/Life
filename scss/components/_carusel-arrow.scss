@@ -1,0 +1,21 @@
+.carusel-arrow {
+  display: none;
+  @include desktop-1024 {
+    position: absolute;
+    top: 50%;
+
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 0px 7.03125px 19.53125px 0px rgba(0, 0, 0, 0.06);
+    transform: translateY(-50%);
+  }
+}
