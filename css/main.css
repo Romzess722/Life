@@ -190,7 +190,7 @@ body {
   color: #e58411;
 }
 .link--component::after {
-  content: url(../../image/next-link.svg);
+  content: url(../image/next-link.svg);
   margin-left: 7px;
   line-height: 10px;
 }
