@@ -188,6 +188,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.85;
+  outline: 1px solid rebeccapurple;
 }
 
 .logo {
@@ -674,12 +675,18 @@ body {
   }
 }
 .choosing__item {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .choosing__item {
     height: 180px;
   }
@@ -718,6 +725,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.85;
+}
+@media screen and (min-width: 768px) {
+  .choosing__text {
+    height: 90px;
+    overflow-y: hidden;
+  }
 }
 @media screen and (min-width: 1024px) {
   .choosing__text {
@@ -929,4 +942,5 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
