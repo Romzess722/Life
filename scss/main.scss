@@ -2,7 +2,9 @@
 @import "./base/container";
 @import "./base/fonts";
 
+@import "./utils/mixin";
 @import "./utils/colors";
+@import "./components/arow-link";
 @import "./components/logo";
 @import "./components/menu";
 @import "./components/title--component";
