@@ -1,9 +1,13 @@
 .link--component {
-  color: $orange-color;
-
-  display: inline-flex;
+  display: flex;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.85;
-  outline: 1px solid rebeccapurple;
+  line-height: 1.8;
+  color: $orange-color;
+
+  &::after {
+    content: url(../../image/next-link.svg);
+    margin-left: 7px;
+    line-height: 10px;
+  }
 }
