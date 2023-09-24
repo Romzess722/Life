@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -46,7 +53,7 @@
             </ul>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Shop</a>
+            <a href="/shop.html" class="menu__link">Shop</a>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link">About Us</a>
@@ -58,17 +65,17 @@
       </nav>
 
       <div class="menu__buttons">
-        <button class="basket">
+        <button class="basket" aria-label="Кошик" title="Кошик">
           <a href="./basket.html" class="basket__link">
             <svg class="basket__icon" height="32" width="32">
               <use href="./image/sprite-svg.svg#icon-Bag"></use>
             </svg>
-
           </a>
         </button>
 
-        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list" data-menu-button>
-          <svg class="menu__icon" height="30" width="30" aria-hidden="true" aria-label="Перемикач мобільного меню">
+        <button class="menu__button" type="button" aria-expanded="false" aria-label="Перемикач мобільного меню"
+          aria-controls="menu__list">
+          <svg class="menu__icon" height="30" width="30" aria-hidden="true">
             <use class="menu__icon-menu" href="./image/sprite-svg.svg#icon-menu"></use>
             <use class="menu__icon-cross" href="./image/sprite-svg.svg#icon-close"></use>
           </svg>
@@ -136,9 +143,7 @@
           The advantage of hiring a workspace with us is that givees you
           comfortable service and all-around facilities.
         </p>
-        <a href="" class="choosing__link link--component">
-          More Info
-        </a>
+        <a href="" class="choosing__link link--component"> More Info </a>
       </li>
 
       <li class="choosing__item">
@@ -147,9 +152,7 @@
           You can get a workspace of the highst quality at an affordable price
           and still enjoy the facilities that are oly here.
         </p>
-        <a href="" class="choosing__link link--component">
-          More Info
-        </a>
+        <a href="" class="choosing__link link--component"> More Info </a>
       </li>
 
       <li class="choosing__item">
@@ -158,9 +161,7 @@
           We provide many unique work space choices so that you can choose the
           workspace to your liking.
         </p>
-        <a href="" class="choosing__link link--component">
-          More Info
-        </a>
+        <a href="" class="choosing__link link--component"> More Info </a>
       </li>
     </ul>
   </section>
@@ -169,17 +170,25 @@
     <h2 class="gallery__title title--component">Best Selling Product</h2>
 
     <div class="gallery-filters">
-      <button class="gallery-filters__button gallery-filters__button--active" data-category="chair">Chair</button>
-      <button class="gallery-filters__button" data-category="beds">Beds</button>
-      <button class="gallery-filters__button" data-category="sofa">Sofa</button>
-      <button class="gallery-filters__button" data-category="lamp">Lamp</button>
+      <button class="gallery-filters__button gallery-filters__button--active" data-category="chair">
+        Chair
+      </button>
+      <button class="gallery-filters__button" data-category="beds">
+        Beds
+      </button>
+      <button class="gallery-filters__button" data-category="sofa">
+        Sofa
+      </button>
+      <button class="gallery-filters__button" data-category="lamp">
+        Lamp
+      </button>
     </div>
 
     <ul class="products">
       <li data-category="" class="products__item">
         <div class="products__trump">
           <picture>
-            <img class="products__trump-image" src="./image/gallery-image/sakarias-armchair.png" alt="">
+            <img class="products__trump-image" src="./image/gallery-image/sakarias-armchair.png" alt="" />
           </picture>
         </div>
         <div class="products__content">
@@ -227,7 +236,7 @@
       <li data-category="" class="products__item">
         <div class="products__trump">
           <picture>
-            <img class="products__trump-image" src="./image/gallery-image/image-2.png" alt="">
+            <img class="products__trump-image" src="./image/gallery-image/image-2.png" alt="" />
           </picture>
         </div>
         <div class="products__content">
@@ -275,7 +284,7 @@
       <li data-category="" class="products__item">
         <div class="products__trump">
           <picture>
-            <img class="products__trump-image" src="./image/gallery-image/image-3.png" alt="">
+            <img class="products__trump-image" src="./image/gallery-image/image-3.png" alt="" />
           </picture>
         </div>
         <div class="products__content">
@@ -323,7 +332,7 @@
       <li data-category="" class="products__item">
         <div class="products__trump">
           <picture>
-            <img class="products__trump-image" src="./image/gallery-image/image-4.png" alt="">
+            <img class="products__trump-image" src="./image/gallery-image/image-4.png" alt="" />
           </picture>
         </div>
         <div class="products__content">
@@ -380,9 +389,62 @@
       </button>
     </ul>
 
-    <a href="" class="products__link link--component">
-      View All
-    </a>
+    <a href="" class="products__link link--component"> View All </a>
+  </section>
+
+  <section class="experience container">
+    <div class="experience__left">
+      <h2 class="experience__pretitle">experience</h2>
+      <h3 class="experience__title title--component">
+        we provide you the best experience
+      </h3>
+      <p class="experience__text">
+        You don’t have to worry about the result because all of these
+        interiors are made by people who are professionals in their fields
+        with an elegant and lucurious style and with premium quality materials
+      </p>
+      <a class="experience__link link--component" href="">More info</a>
+    </div>
+
+    <div class="experience__right">
+      <picture class="experience__right-image">
+        <source srcset="./image/experience/furniture-wall-deskt.jpg" media="(min-width: 768px)" />
+        <img src="./image/experience/furniture-wall.jpg" alt="furniture-wall" />
+      </picture>
+    </div>
+  </section>
+
+  <section class="material container">
+    <div class="material__content">
+      <h2 class="material__pretitle">Materials</h2>
+      <h3 class="material__title title--component">Very serious materials for making furniture</h3>
+      <p class="material__text">
+        Because panto was very serious about designing furniture for our environment, using a very expensive and famous
+        capital
+        but at a relatively low price
+      </p>
+      <a class="material__link link--component" href="">More info</a>
+
+
+    </div>
+    <div class="material__images">
+      <picture class="material__picture material__picture-chair">
+        <source srcset="./image/experience/chair.jpg" media="(min-width: 1024px)" />
+        <img class="material__picture-img" src="./image/experience/chair.jpg" alt="chair" />
+      </picture>
+
+
+      <picture class="material__picture material__picture-only">
+        <source srcset="./image/experience/wooden-chair.jpg" media="(min-width: 1024px)" />
+        <img src="./image/experience/wooden-chair.jpg" alt="wooden-chair" />
+      </picture>
+
+      <picture class="material__picture">
+        <source srcset="./image/experience/sofa.jpg" media="(min-width: 1024px)" />
+        <img class="material__picture-img" src="./image/experience/sofa.jpg" alt="sofa" />
+      </picture>
+
+    </div>
   </section>
 
   <script src="./js/open-menu.js"></script>

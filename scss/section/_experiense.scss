@@ -1,0 +1,56 @@
+.experience {
+  background-color: $white-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__pretitle {
+    margin-bottom: 22px;
+
+    color: $orange-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.15px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    text-transform: capitalize;
+  }
+
+  .experience__left {
+    @media screen and (min-width: 1024px) {
+      order: 2;
+      margin-right: 10vw;
+      width: 47%;
+    }
+  }
+
+  .experience__right {
+    @media screen and (min-width: 1024px) {
+      order: 1;
+      margin-right: 10vw;
+    }
+  }
+
+  &__text {
+    margin-top: 22px;
+
+    color: $colors-title-choosing;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.85;
+  }
+}
+
+.experience__link {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}

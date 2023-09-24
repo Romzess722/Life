@@ -167,6 +167,8 @@
   }
 
   &__link {
+    display: flex;
+    align-items: center;
     margin: 60px auto 0;
     font-size: 18px;
     justify-content: center;
