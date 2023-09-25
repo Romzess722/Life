@@ -1,5 +1,8 @@
 .rating-component {
   display: flex;
-  margin-bottom: 37px;
   gap: 6px;
+
+  &__star {
+    fill: #f6973f;
+  }
 }

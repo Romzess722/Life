@@ -131,6 +131,10 @@
     color: $black-color-gallary;
   }
 
+  .rating__list {
+    margin-bottom: 37px;
+  }
+
   &__footer {
     display: flex;
     align-items: center;
@@ -176,10 +180,12 @@
   }
 
   &__arrow-left {
-    left: -25px;
+    left: 0;
+    transform: translateX(-50%);
   }
 
   &__arrow-right {
-    right: -25px;
+    right: 0;
+    transform: translateX(50%);
   }
 }

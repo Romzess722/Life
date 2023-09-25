@@ -1,6 +1,6 @@
 .carusel-arrow {
   display: none;
-  @include desktop-1024 {
+  @include desktop {
     position: absolute;
     top: 50%;
 
@@ -15,7 +15,7 @@
     border: none;
     padding: 12px;
     background-color: white;
-    box-shadow: 0px 7.03125px 19.53125px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 7px 19.5px 0px rgba(0, 0, 0, 0.06);
     transform: translateY(-50%);
   }
 }
