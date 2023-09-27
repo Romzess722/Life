@@ -123,10 +123,33 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 42px;
     column-gap: 45px;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include desktop-1024 {
+      grid-template-columns: 2fr repeat(3, 1fr);
+    }
+  }
+
+  .logo__subtext {
+    @include tablet {
+      color: #03a9f4;
+      font-weight: 500;
+    }
   }
 
   &__side {
     grid-column: 1 / span 2;
+
+    @include tablet {
+      grid-column: 1 / span 3;
+    }
+
+    @include desktop-1024 {
+      grid-column: 1 / span 1;
+    }
   }
 
   &__text {
@@ -145,17 +168,34 @@
     gap: 16px;
   }
 
-  &__title {
-    @extend .footer__item-link;
-    color: $orange-color-footer;
+  &__list-modifity {
+    width: fit-content;
   }
 
-  &__item {
+  &__title-modifity {
+    grid-column: 1 / span 2;
+  }
+
+  &__item-link.footer__item-modifity {
+    color: #afb1b8;
+  }
+
+  /*styles hover links social*/
+  &__item-modifity:hover .footer__item-icon {
+    fill: #03a9f4;
+  }
+
+  &__item-modifity:hover {
+    color: darkmagenta;
+  }
+
+  &__item-icon {
+    fill: currentColor;
   }
 
   &__item-link,
   &__terms-link {
-    // color: $colors-title-choosing;
+    color: $colors-title-choosing;
     display: flex;
     align-items: center;
     gap: 11px;
@@ -165,24 +205,52 @@
     opacity: 0.8;
   }
 
+  // connects style
+  &__title {
+    @extend .footer__item-link;
+    color: $orange-color-footer;
+  }
+
   &__terms {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: end;
     gap: 16px;
+
+    @include tablet {
+      grid-column: 1 / span 3;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @include desktop-1024 {
+      grid-column: 2 / span 2;
+      grid-row: 2 / span 1;
+    }
   }
 
   &__copiryght {
     grid-column: 1 / span 2;
-    margin-top: 45px;
-    text-align: center;
 
+    text-align: center;
     color: $color-copiryght;
     font-size: 15px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.205px;
     opacity: 0.5;
+
+    @include tablet {
+      grid-column: 1 / span 3;
+      grid-row: 2 / span 1;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 45px;
+    }
+
+    @include desktop-1024 {
+      grid-column: 1 / span 1;
+    }
   }
 }
